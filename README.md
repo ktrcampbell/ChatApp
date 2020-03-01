@@ -1,0 +1,1 @@
+Simple chat application demonstrating Activities and Intents.  Also using Glide to incorporate images
