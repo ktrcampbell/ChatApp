@@ -11,6 +11,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
 
 public class SecondActivity extends AppCompatActivity {
 
@@ -29,11 +30,13 @@ public class SecondActivity extends AppCompatActivity {
         mReply = findViewById(R.id.editText_second);
         iMainImageView = findViewById(R.id.imageView_main);
         Glide.with(this)
+                .applyDefaultRequestOptions(RequestOptions.circleCropTransform())
                 .load(R.drawable.bugs_bunny)
                 .into(iMainImageView);
 
         iReplyImageView = findViewById(R.id.imageView_reply);
         Glide.with(this)
+                .applyDefaultRequestOptions(RequestOptions.circleCropTransform())
                 .load(R.drawable.audirs7)
                 .into(iReplyImageView);
 

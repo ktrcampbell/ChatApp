@@ -13,6 +13,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -39,11 +40,13 @@ public class MainActivity extends AppCompatActivity {
         mReplyTextView = findViewById(R.id.text_message_reply);
         iMainImageView = findViewById(R.id.imageView_main);
         Glide.with(this)
+                .applyDefaultRequestOptions(RequestOptions.circleCropTransform())
                 .load(R.drawable.audirs7)
                 .into(iMainImageView);
 
         iReplyImageView = findViewById(R.id.imageView_reply);
         Glide.with(this)
+                .applyDefaultRequestOptions(RequestOptions.circleCropTransform())
                 .load(R.drawable.bugs_bunny)
                 .into(iReplyImageView);
         closeApp = findViewById(R.id.close_button);
