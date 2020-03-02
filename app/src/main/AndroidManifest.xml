@@ -19,7 +19,8 @@
                 android:value= "com.bb.TalkToMe.MainActivity" />
 
         </activity>
-        <activity android:name="com.bb.TalkToMe.MainActivity">
+        <activity android:name="com.bb.TalkToMe.MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
